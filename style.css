@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.navbar #logo{
+    position: absolute;
+    top:20px;
+    left:20px;
+    color:white;
+    text-decoration: none;
+    font-size: 120%;
+}
+.navbar{
+    position:absolute;
+    top:0px;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius: 10px;
+}
+.entry{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border:7px solid rgb(54, 54, 54);
+    border-radius: 50px;
+    color:white;
+    transition: 0.3s ease-in;
+}
+.entry:hover{
+    transform:scale(1.01)
+}
+.result{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 50px;
+    transition:0.1s ease-in;
+    color:white;
+    border:7px solid rgb(54, 54, 54);
+    z-index: 1;
+}
+.result:hover{
+    transform:scale(1.01)
+}
+.entry #entrybutton{
+    position:relative;
+    top:130px;
+    left:100px;
+    height:50px;
+    width: 300px;
+    border-radius: 20px;
+    transition: 0.1s ease-in;
+    font-size: 110%;
+}
+.entry input[type="text"]{
+    position: relative;
+    top:80px;
+    left: 100px;
+    height:50px;
+    width: 275px;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 110%;
+}
+#username{
+    position: relative;
+    top:70px;
+    left:110px;
+}
+.entry h1{
+    position: relative;
+    top:30px;
+    text-align: center;
+    font-size:300%;
+}
+.entry p{
+    position: relative;
+    top:30px;
+    text-align: center;
+    font-size:150%;
+}
+.entry #entrybutton:hover{
+    background-color: rgb(39, 223, 39);
+    transform: scale(1.07);
+    color:white;
+}
+.result h1{
+    position: relative;
+    top:20px;
+    text-align: center;
+}
+.pfp {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top:30px;
+    left:140px;
+    border-radius: 200px;
+    background-image: url(pfp.png);
+    background-size: cover;
+    z-index: 2;
+}
+.bio{
+    position: relative;
+    top:40px;
+    left:40px;
+    padding:10px;
+    height:100px;
+    width: 400px;
+    border-radius: 20px;
+    border: 3px solid rgb(54, 54, 54);
+    background-color: grey;
+    color:black;
+}

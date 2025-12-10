@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHubProfileSearcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" id="logo"><img src="logo.png" width="50px">GITHUB PROFILE SEARCHER</a>
+    </div>
+    <div class="entry">
+        <h1>WELCOME</h1>
+        <p>Enter The Username To Search</p>
+        <label id="username">Username:</label><br><input type="text" placeholder="ex.Username321" id="user"><br>
+        <button id="entrybutton" onclick="search()">Search</button>
+    </div>
+    <div class="result">
+        <h1>PROFILE</h1>
+        <div class="pfp" >
+        </div>
+        <div class="bio">
+            <p id="bio">bio</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
